@@ -13,6 +13,7 @@ public class OddEven {
 			System.out.println("The number is an EVEN number.");
 		else
 			System.out.println("The number is an ODD number.");
+		scanner.close();
 
 	}
 

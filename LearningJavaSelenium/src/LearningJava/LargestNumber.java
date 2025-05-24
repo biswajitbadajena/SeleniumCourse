@@ -16,6 +16,7 @@ public class LargestNumber {
 		int largest = N1>N2 ? (N1>N3 ? N1 : N3)
 				: (N2>N3 ? N2 : N3);
 		System.out.println("Largest number is: " + largest);
+		scanner.close();
 
 	}
 

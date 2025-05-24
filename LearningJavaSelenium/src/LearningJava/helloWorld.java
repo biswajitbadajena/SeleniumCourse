@@ -10,5 +10,6 @@ public class helloWorld {
 		System.out.println("Hi please provide your name");
 		String name = scanner.next();
 	    System.out.println("Hello "+ name);
+	    scanner.close();
 	}
 }

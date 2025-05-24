@@ -16,6 +16,7 @@ public class TriangleType {
 		String type = S1==S2 && S1==S3 ? "Equilateral Triangle."
 				: (S1==S2 || S2==S3 ? "Isoscales Triangle." : "Scalen Triangle.");
 		System.out.println("The triangle is called " + type);
+		scanner.close();
 
 	}
 

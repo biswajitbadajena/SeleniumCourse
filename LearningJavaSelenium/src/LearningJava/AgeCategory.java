@@ -12,6 +12,7 @@ public class AgeCategory {
 		String category = age>65 ? "Senior Citizen" 
 				: (age<18 ? "Minor" : "Adult");
 		System.out.println("The age category is: " + category);
+		scanner.close();
 
 	}
 
