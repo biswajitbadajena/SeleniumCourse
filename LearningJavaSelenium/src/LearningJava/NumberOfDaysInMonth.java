@@ -9,41 +9,43 @@ public class NumberOfDaysInMonth {
 		int year = scanner.nextInt();
 		System.out.println("Please enter month number.");
 		int month_num = scanner.nextInt();
+		int day;
 		
-		if((year % 4 == 0 && year % 100 !=0) || year % 400 ==0)
-		{
+//		if((year % 4 == 0 && year % 100 !=0) || year % 400 ==0)
+//		{
+//			switch (month_num)
+//			{
+//				case 2:
+//					System.out.println("Month has 29 days in it.");
+//					break;
+//			    case 1:
+//				case 3:
+//				case 5:
+//				case 7:
+//				case 8:
+//				case 10:
+//				case 12:
+//					System.out.println("Month has 31 days in it.");
+//					break;
+//				case 4:
+//				case 6:
+//				case 9:
+//				case 11:
+//					System.out.println("Month has 30 days in it.");
+//			        break;
+//			    default :
+//			    	System.out.println("There is no month number as "+ month_num);
+//			    
+//			}
+//		}
+//		
+//		else
+//		{
 			switch (month_num)
 			{
 				case 2:
-					System.out.println("Month has 29 days in it.");
-					break;
-			    case 1:
-				case 3:
-				case 5:
-				case 7:
-				case 8:
-				case 10:
-				case 12:
-					System.out.println("Month has 31 days in it.");
-					break;
-				case 4:
-				case 6:
-				case 9:
-				case 11:
-					System.out.println("Month has 30 days in it.");
-			        break;
-			    default :
-			    	System.out.println("There is no month number as "+ month_num);
-			    
-			}
-		}
-		
-		else
-		{
-			switch (month_num)
-			{
-				case 2:
-					System.out.println("Month has 28 days in it.");
+					day = ((year % 4 == 0 && year % 100 !=0) || year % 400 ==0) ? 29 : 28;
+					System.out.println("Month has " + day + " days in it.");
 					break;
 			    case 1:
 				case 3:
@@ -65,7 +67,7 @@ public class NumberOfDaysInMonth {
 		}
 		
 
-	}
+//	}
 		scanner.close();
 
 }

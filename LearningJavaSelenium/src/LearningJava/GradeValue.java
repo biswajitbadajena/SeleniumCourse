@@ -1,8 +1,11 @@
 package LearningJava;
+//import java.io.BufferedReader;
+import java.io.IOException;
+//import java.io.InputStreamReader;
 import java.util.*;
 public class GradeValue {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter your Grade.");
@@ -11,6 +14,9 @@ public class GradeValue {
 		if(input.length() == 1)
 		{
 			grade = input.charAt(0);
+		
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        char c = (char)br.read();
 			
 			switch (grade)
 			{
